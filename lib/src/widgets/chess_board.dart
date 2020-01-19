@@ -40,14 +40,26 @@ class ChessBoard extends StatelessWidget {
   List<Widget> _chessBoardRow(ChessBoardRow row, ChessBoardColor rowStartColor) {
     var currentTileColor = rowStartColor;
     return row.tiles.map((tile) {
-      final tile = Expanded(flex: 1, child: Container(
-        color: currentTileColor == ChessBoardColor.WHITE ? Colors.grey : Colors.black,
+      final expandedTile = Expanded(flex: 1, child: Container(
+        decoration: BoxDecoration(
+          color: currentTileColor == ChessBoardColor.WHITE ? Colors.white : Colors.grey,
+          border: Border.all(
+            color: Colors.black,
+            width: 1,
+            style: BorderStyle.solid  
+          )
+        ),
         height: double.infinity,
+        child: _chessBoardTile(tile),
       ));
       currentTileColor = currentTileColor == ChessBoardColor.WHITE
         ? ChessBoardColor.BLACK
         : ChessBoardColor.WHITE;
-      return tile;
+      return expandedTile;
     }).toList();
+  }
+
+  Widget _chessBoardTile(ChessBoardTile tile) {
+    return SizedBox();
   }
 }
