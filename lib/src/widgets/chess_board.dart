@@ -9,7 +9,13 @@ class ChessBoard extends StatelessWidget {
   Widget build(BuildContext context) {
     final bloc = Provider.of(context);
     return Container(
-      color: Colors.grey,
+      decoration: BoxDecoration(
+        border: Border.all(
+          color: Colors.black,
+          width: 1,
+          style: BorderStyle.solid  
+        )
+      ),
       width: double.infinity,
       child: StreamBuilder(
         stream: bloc.chess.state,
