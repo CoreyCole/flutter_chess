@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "361057100419",
+    "firebase_url": "https://flutter-chess.firebaseio.com",
+    "project_id": "flutter-chess",
+    "storage_bucket": "flutter-chess.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:361057100419:android:ff9bfc244a44de041871b6",
+        "android_client_info": {
+          "package_name": "net.coreycole.chess"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "361057100419-lsiensqh4mopv069qbklcjr6k9mu8nls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXu6-sRVPiJs_XH7ytvWFhm_mTVjxLUEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "361057100419-lsiensqh4mopv069qbklcjr6k9mu8nls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
