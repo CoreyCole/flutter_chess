@@ -1,8 +1,10 @@
 class GameState {
+  final bool playing;
   final ChessBoardColor playerColor;
   final ChessBoardData board;
 
   GameState({
+    this.playing,
     this.playerColor,
     this.board,
   });

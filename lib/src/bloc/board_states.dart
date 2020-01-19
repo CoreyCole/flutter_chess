@@ -2,6 +2,20 @@ import 'models.dart';
 
 
 class BoardStates {
+  static String getColumn(int columnNumber) {
+    return (columnNumber == 0) ? 'a'
+      : (columnNumber == 1) ? 'b'
+      : (columnNumber == 1) ? 'c'
+      : (columnNumber == 1) ? 'd'
+      : (columnNumber == 1) ? 'e'
+      : (columnNumber == 1) ? 'f'
+      : (columnNumber == 1) ? 'g'
+      : (columnNumber == 1) ? 'h'
+      : 'X';
+  }
+
+  static String getRow(int rowNumber) => '${rowNumber + 1}';
+
   static const ChessBoardData START_STATE = ChessBoardData(
     rows: [
       ChessBoardRow(
