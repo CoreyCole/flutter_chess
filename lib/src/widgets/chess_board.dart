@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import '../bloc/provider.dart';
 import '../bloc/models.dart';
-import '../bloc/board_states.dart';
 
 
 class ChessBoard extends StatelessWidget {
@@ -87,9 +86,7 @@ class ChessBoard extends StatelessWidget {
     if (tile.piece == null) return SizedBox();
     return GestureDetector(
       onTap: () {
-        final x = BoardStates.getColumn(columnNumber);
-        final y = BoardStates.getRow(rowNumber);
-        print('[$x, $y]: ${tile.piece.color.toString()} ${tile.piece.type.toString()}');
+        print(tile.piece.toString());
       },
       child: Container(
         height: double.infinity,

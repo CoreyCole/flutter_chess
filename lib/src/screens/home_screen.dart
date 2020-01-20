@@ -16,7 +16,7 @@ class HomeScreen extends StatelessWidget {
             child: Text('START'),
             color: Colors.red,
             onPressed: () async {
-              await bloc.chess.initBoard(ChessBoardColor.BLACK);
+              await bloc.chess.initBoard(ChessBoardColor.WHITE);
             },
           )
         ]

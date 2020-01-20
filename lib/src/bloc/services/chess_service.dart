@@ -1,7 +1,6 @@
 import 'package:rxdart/rxdart.dart';
 
 import '../models.dart';
-import '../board_states.dart';
 
 
 class ChessService {
